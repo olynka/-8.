@@ -1,0 +1,63 @@
+/*  display: none; для мобільної і планшетнох*/ 
+.container__title{
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color:var(--predominant-titl-color);
+       
+  margin-bottom:50px;
+  }
+.about{
+  padding-top:60px;
+  padding-bottom:60px;
+    
+  @media screen and(min-width: 1200px){
+    padding-top: var(--padding-section);
+    padding-bottom:var(--padding-section);}
+    }
+ 
+  
+.about-list{
+  display: flex;
+    
+  }
+.about-list__item{
+  margin-right: 30px;
+  position: relative;
+&:nth-child(3n){
+    margin-right: 0;
+          }
+  }
+
+.about-list__text{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+        
+  color: var(--background-nice-color);
+  background-color:  rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+        
+  justify-content: center;
+  align-items: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  }
+  .about{
+    display: none;
+    @media screen and(min-width: 1200px){
+display: flex;
+    
+      }
+  }
+        
