@@ -158,23 +158,41 @@
         <h2 class="container__title">Чем мы занимаемся</h2>
  <ul class="about-list list">
      <li class="about-list__item"> 
-         <img  src="images/img.jpg" alt="человек работает на ноуте"
+        <picture>
+            <source srcset="./images/about/about11x.jpg 1x,
+            ./images/about/about12x.jpg 2x"
+            media="min-width: 1200px">
+            
+       </picture>
+         <img srcset="./images/about/about11x.jpg 1x,
+                      ./images/about/about12x.jpg 2x"
+          src="images/img.jpg" alt="человек работает на ноуте"
          width="370"
          height="294"/>
         <p class="about-list__text">Десктопные приложения</p>
 
      </li>
      <li class="about-list__item">
-        <img src="images/img2.jpg" alt="разработка мобильного приложения"
-        width="370"
-        height="294"/>
+         <picture>
+             <source srcset="./images/about/about21x.jpg 1x,
+             ./images/about/about22x.jpg 2x"
+             media="min-width: 1200px">
+             <img src="images/img2.jpg" alt="разработка мобильного приложения"/>
+        </picture>
+         
+        
         <p class="about-list__text">Мобильные приложения</p>
     </li>
     <li class="about-list__item">
-        <img  src="images/img3.jpg" alt="
-        изображение рисунка в пикселях"
-        width="370"
-        height="294"/>
+        <picture>
+            <source srcset="./images/about/about31x.jpg 1x,
+            ./images/about/about32x.jpg 2x"
+            media="(min-width: 1200px)">
+            <img 
+            src="images/img3.jpg" alt="
+           изображение рисунка в пикселях"/>
+       </picture>
+      
         <p class="about-list__text">Дизайнерские решения</p>
     </li>
  </ul>
@@ -188,7 +206,21 @@
     <ul class="team-list list">
        
      <li class="team-list__item"> 
-            <img  src="images/mobile/mobile/img1.jpg" alt="фото работника" width="100%" height="260"/>
+        <picture>
+            <source srcset="./images/desktop/strategy11x.jpg 1x,
+            ./images/desktop/strategy12x.jpg 2x" 
+            media="(min-width: 1200px)">
+
+            <source srcset="./images/tablet/tablet/strategy11x.jpg 1x,
+            ./images/tablet/tablet/team2x.jpg 2x" 
+            media="(min-width: 768px)">
+
+            <source srcset="./images/mobile/mobile/strategy11x.jpg 1x,
+            ./images/mobile/mobile/strategy12x.jpg 2x" 
+            media="(min-width: 320px)">
+            <img src="images/mobile/mobile/img1.jpg" alt="фото работника" />
+       </picture>
+
       <div class="container-soc">
         <h3 class="container-soc__title">Игорь Демьяненко</h3>
         <p class="container-soc__text" >Product Designer </p>
@@ -227,7 +259,23 @@
      </li>
 
     <li class="team-list__item">
-            <img src="images/mobile/mobile/img 2.jpg" alt="фото работника" width="100%" height="260"/>
+        <picture>
+            <source srcset="./images/desktop/strategy21x.jpg 1x,
+            ./images/desktop/strategy22x.jpg 2x"
+            media="(min-width: 1200px)">
+
+            <source srcset="./images/tablet/tablet/strategy21x.jpg 1x,
+            /images/tablet/tablet/team22x.jpg 2x"
+            media="(min-width: 768px)">
+            
+            <source srcset="./images/mobile/mobile/strategy21x.jpg 1x,
+            /images/mobile/mobile/strategy22x.jpg 2x"
+            media="(min-width: 320px)">
+            <img  src="images/mobile/mobile/img 2.jpg" alt="фото работника" />
+     
+        </picture>
+            
+          
     <div class="container-soc">
         <h3 class="container-soc__title">Игорь Демьяненко</h3>
         <p class="container-soc__text">Frontend Developer</p>
@@ -267,7 +315,22 @@
     </li>
  
     <li class="team-list__item">
-            <img src="images/mobile/mobile/img3.jpg" alt="фото работника" width="100%" height="260"/>
+        <picture>
+            <source srcset="./images/desktop/strategy31x.jpg 1x,
+            ./images/desktop/strategy32x.jpg 2x"
+            media="(min-width: 1200px)">
+
+            <source srcset="./images/tablet/tablet/strategy31x.jpg 1x,
+            /images/tablet/tablet/team32x.jpg 2x"
+            media="(min-width: 768px)">
+            
+            <source srcset="./images/mobile/mobile/strategy31x.jpg 1x,
+            /images/mobile/mobile/strategy32x.jpg 2x"
+            media="(min-width: 320px)">
+
+            <img src="images/mobile/mobile/img3.jpg" alt="фото работника" />
+        </picture>
+          
     <div class="container-soc">
        <h3 class="container-soc__title">Игорь Демьяненко</h3>
        <p class="container-soc__text">Marketing</p>
@@ -306,7 +369,22 @@
     </li>
     
      <li class="team-list__item">
-            <img src="images/mobile/mobile/img4.jpg" alt=" фото работника" width="100%" height="260"/>
+        <picture>
+            <source srcset="./images/desktop/strategy41x.jpg 1x,
+            ./images/desktop/strategy42x.jpg 2x"
+            media="(min-width: 1200px)">
+
+            <source srcset="./images/tablet/tablet/strategy41x.jpg 1x,
+            /images/tablet/tablet/team42x.jpg 2x"
+            media="(min-width: 768px)">
+            
+            <source srcset="./images/mobile/mobile/strategy41x.jpg 1x,
+            /images/mobile/mobile/strategy42x.jpg 2x"
+            media="(min-width: 320px)">
+            
+            <img src="images/mobile/mobile/img4.jpg" alt=" фото работника" />
+        </picture>
+            
     <div class="container-soc">
         <h3 class="container-soc__title">Игорь Демьяненко</h3>
         <p class="container-soc__text">UI Designer</p>
