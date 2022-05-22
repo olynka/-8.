@@ -46,11 +46,11 @@
    &:hover,
    &:focus{
       color:var( --hover-kolor);}
-      @media screen and(min-width: 1200px){
+  @media screen and(min-width: 1200px){
         font-size: 14px;
         line-height: 1.14;
-      &:hover,
-        &:focus {
+  &:hover,
+  &:focus {
           color: var(--hover-kolor);
         }}}
 
@@ -78,7 +78,7 @@
 .header-list--flex{
   @media screen and(min-width: 768px){
     display: block;}
-    @media screen and(min-width: 1200px){
+  @media screen and(min-width: 1200px){
  display: flex;
       }
   }
