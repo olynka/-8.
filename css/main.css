@@ -426,30 +426,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 48px;
-  margin-top: 64px;
-  list-style-type: none;
-}
-
-.network {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -10px;
-}
-
-.network_item {
-  width: calc(100%/2 - 10px);
-  margin-right: 10px;
-}
-
-@media screen and (min-width: 480px) {
-  .network_item {
-    width: calc(100%/4 - 10px);
-    ma: 10px;
-  }
+  list-style-type: none;
 }
 
 .hero {
@@ -468,11 +447,10 @@ img {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url("..//images/tablet/tablet/header1x.jpg");
     background-image: linear-gradient(to right, #2f303a66, #2f303a66), url("..//images/tablet/tablet/header1x.jpg");
-    max-width: 768px;
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -1561,7 +1539,7 @@ img {
 
 .backgdrop {
   position: fixed;
-  top: 0;
+  top: 0px;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1638,21 +1616,15 @@ img {
 }
 
 .modal-container__title {
+  display: inline-block;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 0.7;
+  font-size: 15px;
+  line-height: 1,5;
   text-align: center;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--modal-color-title);
   margin-bottom: 31px;
-}
-
-@media screen and (min-width: 1200px) {
-  .modal-container__title {
-    font-size: 20px;
-    line-height: 1.5;
-  }
 }
 
 .modal-container__input {
@@ -1680,7 +1652,7 @@ img {
 .modal-button {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.8px;
+  line-height: 1.8;
   cursor: pointer;
   border: none;
   display: block;
@@ -1759,9 +1731,10 @@ img {
 .link-modal {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 14px;
   color: var(--hover-kolor);
   letter-spacing: 0.03em;
+  display: inline-block;
 }
 
 .modal-container__input {
@@ -1775,9 +1748,7 @@ img {
   line-height: 1.7px;
   letter-spacing: 0.03em;
   color: var(--predominant-text-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
