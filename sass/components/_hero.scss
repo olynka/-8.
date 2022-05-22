@@ -9,9 +9,8 @@
   text-align: center;
 
 @media screen and(min-width: 768px){
-  
-    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url('..//images/tablet/tablet/header1x.jpg'); 
-}
+  max-width: 768px;
+  background-image: linear-gradient(to right, #2f303a66, #2f303a66), url('..//images/mobile/mobile/header1x.jpg');}
 @media screen and(min-width: 1200px){
   padding-top: 200px;
   padding-bottom: 200px;
