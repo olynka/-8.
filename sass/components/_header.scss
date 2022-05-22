@@ -45,14 +45,15 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    &:hover,
    &:focus{
-      color:var( --hover-kolor);
+      color:var( --hover-kolor);}
       @media screen and(min-width: 1200px){
         font-size: 14px;
         line-height: 1.14;
-       
-       
-     }}
-}
+      &:hover,
+        &:focus {
+          color: var(--hover-kolor);
+        }}}
+
  
 .header__nav{
    display: flex;
@@ -105,41 +106,36 @@
     &:not(:last-child) {
       margin-bottom: 10px;}
     @media screen and(min-width: 1200px){
-    &:not(:last-child) {
+      
+      &:not(:last-child) {
       margin-bottom: 0px;}
     &:not(:last-child) {
       margin-right: 30px;}
       padding-top: 32px;
       padding-bottom: 32px;
-      
-          
+        
             }
         }
-        .header-list--size{
-          @media screen and(min-width: 1200px){
-            width:10px ;
-            height:16px ;
-          }
+        .header-list-mailto-size{
+          @media screen and(min-width: 1200px) {
+          width: 16px; 
+          height: 12px;}
         }
+  .header-list-contact-size{
+    @media screen and(min-width: 1200px) {
+        width: 10px;
+        height: 16px;
+      }
+  }
         
-
 .header-list__mailito {
    justify-content: center;
    vertical-align: middle;
    margin-right: 10px;
    fill:currentColor;
-   @media screen and(min-width: 1200px){
-   width: 16px;
-   height: 12px;
-  
-    }
-}
-.header-list--size{
-  @media screen and(min-width: 1200px){
-    width:10px ;
-    height:16px ;
-  }
-}
+   
+      }
+    
 
 
 .header-list__after::after{
@@ -200,11 +196,15 @@
     }}
 
  .button-menu {
-   display:block;
+ display: block;
+ position: absolute;
+ top: 10px;
+ right: 15px;
    background-color: transparent;
    border: none;
    margin-right: auto;
    cursor: pointer;
+
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  &:hover,
  &:focus {

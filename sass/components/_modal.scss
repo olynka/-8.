@@ -14,7 +14,6 @@
   }
   
 .modal{
-
    position: absolute;
    top: 50%;
    left: 50%;
@@ -135,9 +134,7 @@
 
  .modal-form__name{
 
-
-
-   display: block;
+   display:flex;
    font-weight: 400px;
    font-size: 12px;
    line-height: 14px;
@@ -183,10 +180,10 @@
 .link-modal{
    font-weight: 400;
    font-size: 12px;
-   line-height:14px;
+   line-height:0.8;
     color: var(--hover-kolor);
     letter-spacing: 0.03em;
-display: inline-block;
+ display: inline;
   }
 
 .modal-container__input{
@@ -194,19 +191,17 @@ display: inline-block;
   outline: transparent;
   
   }
-.modal-form__text{
+  .modal-form__text{
     font-weight: 400;
   font-size: 12px;
   line-height: 1.7px;
- 
+  
   
   letter-spacing: 0.03em;
   color: var(--predominant-text-color);
-  display:inline-block;
+  display: inline;
   align-items: center;
-  @media screen and(min-width: 1200px){
-    font-size: 14px;}
-  
+ justify-content: center;
   
 &::before{
     content: "";
@@ -214,7 +209,7 @@ display: inline-block;
   height: 15px;
   border: 2px solid var(--babackground-minor-color);
   border-radius: 2px;
-  display: block;
+  display:inline-flex;
   margin-right: 8px;
   
   }}

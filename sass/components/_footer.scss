@@ -215,12 +215,14 @@
    box-sizing: border-box;
    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
    border-radius: 4px;
+
    margin-bottom: 20px;/**/
   /* margin-right: 12px;
    padding-left: 16px;*/
    @media screen and(min-width: 768px){
       max-width:  450px;
-      margin-left: 166px;}
+
+     /* margin-left: 166px;*/}
     @media screen and(min-width: 1200px){
       max-width:358px;
     margin-bottom: 0;
@@ -254,7 +256,7 @@
     height: 86px;
     margin-left: 93px;*/
     @media screen and(min-width: 768px){
-      width: 100%;
+      width: 450px;
       margin: 0 auto ;
       @media screen and(min-width: 1200px){
          width: 570px;
