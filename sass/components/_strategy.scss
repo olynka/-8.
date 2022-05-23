@@ -43,20 +43,25 @@
   }}
 
   .strategy-list__item{
+    @media screen and(min-width: 480px) {
       &:not(:last-child) {
-          margin-bottom: 30px;}
+          margin-bottom: 30px;
+        }
+      }
+     
     @media screen and(min-width: 768px){
      width:calc(100%/2 - 30px);
         margin-top: 30px;
         margin-left: 30px;
-     }
-  
-  
-
+  &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+          }
+     
    @media screen and(min-width: 1200px){
-    width:calc(100%/4 - 30px);
+    width:calc(100%/4 - 30px);}
     margin-bottom: 0;
-}}
+   }
         
 .strategy-list__strategy{
    width: 100%;

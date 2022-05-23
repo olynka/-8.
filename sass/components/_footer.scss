@@ -100,7 +100,7 @@
 
 }
 .container-cos{
-  padding-bottom: 60px;
+ 
 
   @media screen and(min-width: 1200px){
    align-content: flex-start;
@@ -111,7 +111,7 @@
 .footer-container{
    @media screen and(min-width: 1200px){
       display: flex;
-     
+      padding: 0 15px;
       }}
 
 .footer-container{
@@ -120,16 +120,15 @@
    display: flex;}}
 
 .container-address{
-   width:100%;
-   padding-bottom: 60px;
-  
+margin-bottom: 60px;
+@media screen and(min-width: 768px) {
+   margin-bottom: 0;
+   }
  
-   @media screen and(min-width: 768px){
-      width: 231px;
-      margin-right: 165px;}
    @media screen and(min-width: 1200px){
       margin-right: 0px;
       padding-bottom: 0;
+   
      
          }}
  
@@ -237,8 +236,13 @@
    margin-left: 10px;
   }
   .container-tablet{
+      margin-bottom: 60px;
    @media screen and(min-width: 768px){
      display: flex;
-     justify-content: center;
+     justify-content:space-around;
      align-items: baseline;
-  }}
+   @media screen and(min-width: 1200px) {
+      margin-bottom: 0px;
+      }
+   }
+  }
