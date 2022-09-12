@@ -10,6 +10,7 @@
   --padding-section:94px;
   --contact-soc:#AFB1B8;
   --modal-color-title:#212121;
+    --footer-txt: #545454;
 }
 
 .visually-hidden {
@@ -996,16 +997,72 @@ img {
   color: var(--minor-title-coolor);
 }
 
-.footer-list__link {
+
+
+.footer{
+  display: flex;
+  
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 400;
+    width: 100%;
+    height: 100px;
+    margin-top: 40px;
+    background-color: #F7F7F7;
+  
+}
+    @media screen and (min-width:768) {
+      .footer {
+        height: 79px;
+          flex-direction: row;
+          align-items: center;
+          font-size: 16px;
+          line-height: 1.18;
+          margin-top: 60px;
+      }
+      
+.footer__rights {
+  margin-bottom: 10px;
+/* 
+  @include mq(tablet) {
+    margin-bottom: 0;
+    margin-right: 5px;
+  } */
+}
+@media screen and (min-width:768) {
+.footer__rights {
+margin-bottom: 0;
+  margin-right: 5px;
+  }
+}
+
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__btn {
+  color: inherit;
+  background-color: transparent;
+  border-bottom: 1px solid var(--footer-txt);
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+
+/* .footer-list__link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--minor-title-coolor);
-}
+} */
 
-.footer-list__contact {
+/* .footer-list__contact {
   font-style: normal;
   text-align: center;
   font-size: 14px;
@@ -1014,27 +1071,27 @@ img {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
-}
+} */
 
-.footer {
+/* .footer {
   background-color: var(--babackground-minor-color);
   padding-top: 60px;
   padding-bottom: 60px;
-}
+} */
 
-.footer-list__item:not(:last-child) {
+/* .footer-list__item:not(:last-child) {
   margin-bottom: 9px;
-}
+} */
 
-.footer-list__item {
+/* .footer-list__item {
   text-align: center;
-}
+} */
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
   .footer-list__item {
     text-align: left;
   }
-}
+} */
 
 .list-cos__link {
   width: 44px;
